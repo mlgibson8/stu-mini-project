@@ -1,1 +1,76 @@
+:root {
+ --purple: purple;
+ --dark-background: grey;
+ --light: white;
 
+
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    max-width: 33%;
+    border: 2px var(--light) dashed;
+    padding: 5px;
+
+}
+
+.card-header {
+    border: 2px var(--light) solid;
+    border-radius: 2px;
+    position: relative;
+    margin-top: -20px;
+    background-color: var(--dark-background);
+}
+pre {
+    border-radius: ;
+    color: var(--light);
+    background-image: linear-gradient rgba(232,102,236,0.3) 0%, rgba(232,102,236,0.6) 100%;
+}
+
+.card .card-header {
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover,
+.card:hover .card-header {}
+
+body {
+    background-color: var(--dark-background);
+    color: var(--purple);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+header h2 {
+    color: var(--light);
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px){
+    .card {
+        width: 48%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+    
+}
+body h1 {
+    font-weight: strong;
+}
